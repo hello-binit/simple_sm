@@ -1,18 +1,26 @@
 [project]
-name = "simple-fsm"
+name = "simple-sm"
 # Versioning follow CalVer (YYYY.MM.DD) for PEP 440 compliance
-version = "2026.09.01"
-description = "A simple-to-use Python finite state machine library"
+version = "2026.09.02"
+description = "A simple-to-use Python state machine library"
 readme = "README.md"
 authors = [
     { name = "Binit Shah", email = "bshah@hello-robot.com" }
 ]
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "pillow>=12.3.0",
+]
 
 [build-system]
 requires = ["uv_build>=0.10.7,<0.11.0"]
 build-backend = "uv_build"
 
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+    "pyyaml>=6.0.3",
+]
+
 [project.urls]
-Homepage = "https://github.com/hello-binit/simple_fsm"
+Homepage = "https://github.com/hello-binit/simple_sm"
