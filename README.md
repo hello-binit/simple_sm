@@ -6,7 +6,7 @@ A simple State Machine (SM) library in Python.
 
 Install with:
 ```
-pip install simple-sm
+pip install ssmach
 ```
 
 This example is based on the autodocking state machine in [Stretch's ROS2 SDK](https://github.com/hello-robot/stretch4_ros2):

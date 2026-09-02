@@ -1,5 +1,5 @@
 [project]
-name = "simple-sm"
+name = "ssmach"
 # Versioning follow CalVer (YYYY.MM.DD) for PEP 440 compliance
 version = "2026.09.02"
 description = "A simple-to-use Python state machine library"
@@ -15,6 +15,9 @@ dependencies = [
 [build-system]
 requires = ["uv_build>=0.10.7,<0.11.0"]
 build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-name = "simple_sm"
 
 [dependency-groups]
 dev = [
